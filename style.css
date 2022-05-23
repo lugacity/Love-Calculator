@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f7f6;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    margin: 0%; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+} 
+
+.divlovecal{
+    text-align: center;
+}
+label, h1{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .love_info {
+        margin: auto;
+        width: 90%;
+    }
+      }

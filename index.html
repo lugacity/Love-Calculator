@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">   
+</head>
+<body>
+   <!-- <div class="divlovecal w3-large w3-medium w3-hide-small">
+        <h1>Welcome to this great invention of <br> Lugacity Optimal Solutions</h1>
+    <p>To find out what the chances for you and your dream partner are, just fill in both full name <br>
+        (Both first and last name) in the two text boxes below, and press Calculate.
+    </p>
+    <form action="">
+        <label for="">Your name</label>
+        <input  class="w3-input w3-round-xlarge w3-center inputlove1" type="text" placeholder="Full name" onfocus="this.value = ''" id="inputlove1"> <br>
+        <label for="">Your Crush</label>
+        <input class="w3-input w3-round-xlarge w3-center inputlove2" type="text" placeholder="Full name" onfocus="this.value = ''" id="inputlove2"> <br>
+        <button onclick="calLov()" class="w3-btn w3-red w3-round-xlarge" id="btnlove">Calculate love</button>
+    </form> 
+    <div class="result">
+        <p id="luv"></p>
+    </div>
+    </div>  -->
+
+    <!-- <div class="divlovecal w3-hide-large w3-hide-medium w3-small">
+        <h3 style="font-family: monospace; font-weight: bold;">Welcome to this great invention of <br> Lugacity Optimal Solutions</h3>
+    <p>To find out what the chances for you and your dream partner are, <br> just fill in both full name 
+        (Both first and last name) <br> in the two text boxes below, and press Calculate.
+    </p>
+   
+    <form action="">
+        <label for="">Your name</label>
+        <input  class="w3-input w3-round-xlarge w3-center inputlove" type="text" placeholder="Full name" required> <br>
+        <label for="">Your Crush</label>
+        <input class="w3-input w3-round-xlarge w3-center inputlove" type="text" placeholder="Full name" required> <br>
+        <button class="w3-btn w3-red w3-round-xlarge lovevalue">Calculate love</button>
+    </form>
+
+    </div> -->
+
+    
+
+<!-- <script src="script.js"></script> -->
+
+<!-- <script>
+    function calLov(){
+    var love = document.getElementById("inputlove1").value;
+    var love3 = document.getElementById("inputlove2").value;
+if(love.length<=2 || love3.length<=2){
+    alert('The character must be atleast 3');
+    }
+
+else{
+    var random = Math.floor(Math.random() * 100);
+    document.getElementById("luv").innerHTML = love + "and" + love3 + "=" +random + "%" + "of love";
+
+    }
+}
+</script> -->
+
+<div class="divlovecal w3-large w3-medium">
+    <div class="content">
+        <div class="w3-hide-small">
+            <h1 style="text-transform: uppercase; border-radius: 30px; background-color: red; color: white;">Love Calculator</h1>
+            <h1 class="w3-hide-small w3-hide-medium">Welcome to this great invention of <br> Lugacity Optimal Solutions</h1>
+            <p>To find out what the chances for you and your dream partner are, just fill in both full name <br>
+            (Both first and last name) in the two text boxes below, and press Calculate.
+            </p>
+        </div>
+        <div style="margin: auto; width:90%" class="w3-hide-large">
+            <h1 style="text-transform: uppercase; border-radius: 30px; background-color: red; color: white;">Love Calculator</h1>
+            <h3 class="w3-hide-large" style="font-weight:600">Welcome to this great invention of <br> Lugacity Optimal Solutions</h3>
+            <p>To find out what the chances for you and your dream partner are, just fill in both full name <br>
+            (Both first and last name) in the two text boxes below, and press Calculate.
+            </p>
+        </div>
+    <div class="love_info">
+        <label for="">Your name</label> <br> <input class="w3-input w3-round-xlarge w3-center type="text" placeholder="Your Name" id="nameOne" onfocus="this.value = ''"> <br>
+        <label for="">Your name</label> <br> <input class="w3-input w3-round-xlarge w3-center type="text" placeholder="Your Name" id="nameTwo" onfocus="this.value = ''">
+    </div>
+
+    </div>
+    <div class="inputtext w3-padding">
+        <button onclick="love()" class="w3-btn w3-red w3-round-xlarge">Calculate</button>
+        <p id="print">Your relationship result is </p>
+        <p id="statement"></p>
+    </div>
+</div>
+
+
+
+<script>
+    function love(){
+        const love1 = document.getElementById("nameOne").value;
+        const love2 = document.getElementById("nameTwo").value;
+
+        if(love1.length<=2 || love2.length<=2){
+            alert("The word must be atleast 3 character");
+        }
+        else{
+            var random = Math.floor(Math.random()*100);
+            document.getElementById("print").innerHTML = love1 + "and" + love2 + "=" +random + "%" + "of love";
+        }
+
+        if(random<=10 || random<=50){
+            document.getElementById("statement").innerHTML = "You guys still have hope";
+            document.getElementById("statement").style.color = "red"
+        }
+        else if(random>=51 || random<=100){
+            document.getElementById("statement").innerHTML = "Love in the Air";
+            document.getElementById("statement").style.color = "green"
+        }
+    }
+</script>
+
+<!-- <div class="divlovecal w3-large w3-medium">
+    <div class="content">
+        <h1 style="text-transform: uppercase; border-radius: 30px; background-color: red; color: white;">Love Calculator</h1>
+        <h1 >Welcome to this great invention of <br> Lugacity Optimal Solutions</h1>
+    <p>To find out what the chances for you and your dream partner are, just fill in both full name <br>
+        (Both first and last name) in the two text boxes below, and press Calculate.
+    </p>
+    <label for="">Your name</label> <br> <input class="w3-input w3-round-xlarge w3-center type="text" placeholder="Your Name" id="nameOne" onfocus="this.value = ''"> <br>
+    <label for="">Your name</label> <br> <input class="w3-input w3-round-xlarge w3-center type="text" placeholder="Your Name" id="nameTwo" onfocus="this.value = ''">
+    </div>
+    <div class="inputtext w3-padding">
+        <button onclick="love()" class="w3-btn w3-red w3-round-xlarge">Calculate</button>
+        <p id="print">Your relationship result is </p>
+        <p id="statement"></p>
+    </div>
+</div> -->
+
+</body>
+</html>
